@@ -44,7 +44,8 @@ public class JedisUtils {
 
             try {
                 /**
-                 * 如果你遇到 java.net.SocketTimeoutException: Read timed out exception的异常信息 请尝试在构造JedisPool的时候设置自己的超时值.
+                 * 如果你遇到 java.net.SocketTimeoutException: Read timed out
+				 exception的异常信息 请尝试在构造JedisPool的时候设置自己的超时值.
                  * JedisPool默认的超时时间是2秒(单位毫秒) JedisPoolConfig
                  */
                 JedisPoolConfig name = new JedisPoolConfig();
@@ -61,7 +62,8 @@ public class JedisUtils {
     }
 
     /**
-     * 类级的内部类，也就是静态的成员式内部类，该内部类的实例与外部类的实例 没有绑定关系，而且只有被调用到时才会装载，从而实现了延迟加载。
+     * 类级的内部类，也就是静态的成员式内部类，该内部类的实例与外部类的实例
+	 没有绑定关系，而且只有被调用到时才会装载，从而实现了延迟加载。
      */
     private static class RedisUtilHolder {
 
