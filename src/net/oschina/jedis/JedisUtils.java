@@ -17,7 +17,7 @@ import redis.clients.jedis.JedisPoolConfig;
  */
 public class JedisUtils {
 
-    protected Logger log = LoggerFactory.getLogger(getClass());
+    protected static Logger log = LoggerFactory.getLogger(JedisUtils.class);
 
     /**
      * 私有构造器.
@@ -52,7 +52,7 @@ public class JedisUtils {
                 pool = new JedisPool(name, ip, port, 2000);
                 maps.put(key, pool);
             } catch (Exception e) {
-                e.printStackTrace();
+                log.error(e.getMessage());
             }
         } else {
             pool = maps.get(key);
@@ -85,6 +85,7 @@ public class JedisUtils {
      * 
      * @return Redis工具类实例
      */
+    @SuppressWarnings("deprecation")
     public Jedis getJedis(String ip, int port) {
         Jedis jedis = null;
         int count = 0;
