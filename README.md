@@ -1,5 +1,5 @@
-# JedisUtils
+ï»¿# JedisUtils
 
-Ê¹ÓÃÁ¬½Ó³ØÁ¬½Ó redis ,
-»ùÓÚ https://github.com/dachuanz/jedis
+ä½¿ç”¨è¿æ¥æ± è¿æ¥ redis ,
+åŸºäº https://github.com/dachuanz/jedis
 http://commons.apache.org/proper/commons-pool/api-2.4.1/index.html
